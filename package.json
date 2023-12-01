@@ -1,0 +1,34 @@
+{
+  "name": "advent-js-2023",
+  "version": "1.0.0",
+  "description": "Challenges AdventJs2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc",
+    "build": "esbuild challenges/index.ts --bundle --platform=node --outfile=dist/index.js --format=esm",
+    "start": "node dist/index.js",
+    "dev:tsc": "tsc --watch --preserveWatchOutput",
+    "dev:node": "node --watch dist/index.js",
+    "dev:esbuild": "pnpm run build --watch",
+    "dev": "run-p dev:*"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramonrp/advent-js-2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramonrp/advent-js-2023/issues"
+  },
+  "homepage": "https://github.com/ramonrp/advent-js-2023#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.1",
+    "esbuild": "^0.19.8",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.3.2"
+  }
+}
